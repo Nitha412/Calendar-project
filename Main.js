@@ -395,4 +395,3 @@ export class Main  extends Component{
         );
       }
     }
-}
