@@ -123,14 +123,14 @@ export class Main  extends Component{
     
         let newEvents = [];
     
-        var eventTitle = prompt("Please enter a name for your event: ");
+        var eventTitle = prompt("enter a name for your event: ");
     
         switch (eventTitle) {
           case "":
             alert("Event name cannot be empty.");
             break;
           case null:
-            alert("Changed your mind? You can add one later!");
+            
             break;
           default:
             var newEvent = {
@@ -159,7 +159,7 @@ export class Main  extends Component{
         if (currentSelectedDate.isAfter(isAfterDay)) {
           this.handleAdd();
         } else {
-          if (confirm("Are you sure you want to add an event?")) {
+          if (confirm("add an event")) {
             this.handleAdd();
           } else {
           } // end confirm past
